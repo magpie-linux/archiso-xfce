@@ -39,7 +39,6 @@ linux-headers
 linux-firmware
 lolcat
 lvm2
-linux-atm
 lsscsi
 lsb-release
 mtools
@@ -86,7 +85,7 @@ wd719x-firmware
 
 ## Base Development
 
-base-devel
+#base-devel
 
 ## Xorg
 
@@ -109,19 +108,20 @@ intel-ucode
 dconf
 xfce4
 xfce4-goodies
+xdg-user-dirs
 lightdm
 lightdm-gtk-greeter
 
 ## Multimedia
 
 alsa-utils
-gstreamer
+#gst-libav
+#gst-plugins-bad
+#gst-plugins-base
+#gst-plugins-good
+#gst-plugins-ugly
 phonon-qt5-gstreamer
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-good
-gst-plugins-ugly
+vlc
 
 ## Internet
 
@@ -140,7 +140,7 @@ adobe-source-code-pro-fonts
 libreoffice-still
 simplescreenrecorder
 
-## Themes
+## Themes and Icons
 
 arc-gtk-theme
 papirus-icon-theme
