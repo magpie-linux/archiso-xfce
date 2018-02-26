@@ -55,7 +55,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 # #############################################################################
 
 # ############################# Removing packages #################################################
-#pacman -R --noconfirm xf86-video-intel
+#pacman -R --noconfirm gnome-terminal
 # #################################################################################################
 
 # ############ Installing custom packages to rootfs ###############

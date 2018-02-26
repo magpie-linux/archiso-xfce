@@ -39,6 +39,7 @@ linux-headers
 linux-firmware
 lolcat
 lvm2
+linux-atm
 lsscsi
 lsb-release
 mtools
@@ -80,12 +81,10 @@ wpa_actiond
 wvdial
 xl2tpd
 zd1211-firmware
-aic94xx-firmware
-wd719x-firmware
 
 ## Base Development
 
-#base-devel
+base-devel
 
 ## Xorg
 
@@ -102,10 +101,10 @@ ttf-freebanglafont
 libva
 libva-mesa-driver
 intel-ucode
+intel-tbb
 
 ## Desktop Environment
 
-dconf
 xfce4
 xfce4-goodies
 xdg-user-dirs
@@ -115,13 +114,13 @@ lightdm-gtk-greeter
 ## Multimedia
 
 alsa-utils
+#gstreamer
+#phonon-qt5-gstreamer
 #gst-libav
 #gst-plugins-bad
 #gst-plugins-base
 #gst-plugins-good
 #gst-plugins-ugly
-phonon-qt5-gstreamer
-vlc
 
 ## Internet
 
@@ -137,22 +136,27 @@ virtualbox-guest-utils
 ## Essential Packages
 
 adobe-source-code-pro-fonts
-libreoffice-still
-simplescreenrecorder
+#libreoffice-still
+#gimp
 
-## Themes and Icons
+## Themes
 
+Numix-Cursor-Maia
 arc-gtk-theme
+#osx-arc-darker
+#osx-arc-shadow
+#osx-arc-white
 papirus-icon-theme
 
 ## Magpie Repository
 
+aic94xx-firmware
+wd719x-firmware
 neofetch
 grub-themes-magpie
 magpie-cursor
 magpie-getsource
 magpieos-startup
-Numix-Cursor-Maia
 package-query
 pamac
 yaourt
@@ -161,3 +165,6 @@ yaourt
 
 filezilla
 gparted
+yaml-cpp
+polkit-qt5
+yajl
