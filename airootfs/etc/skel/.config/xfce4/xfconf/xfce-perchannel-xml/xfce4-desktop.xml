@@ -31,4 +31,11 @@
     <property name="window-width" type="int" value="691"/>
     <property name="window-height" type="int" value="514"/>
   </property>
+  <property name="desktop-icons" type="empty">
+    <property name="file-icons" type="empty">
+      <property name="show-filesystem" type="bool" value="false"/>
+      <property name="show-trash" type="bool" value="true"/>
+      <property name="show-removable" type="bool" value="false"/>
+    </property>
+  </property>
 </channel>

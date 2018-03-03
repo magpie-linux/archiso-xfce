@@ -1,23 +1,11 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[2018-02-25-18-34-27-00]
-row=3
-col=0
-
-[6202-1804]
-row=4
-col=0
-
 [Trash]
-row=2
-col=0
-
-[/]
-row=0
-col=0
-
-[/home/rizwan]
 row=1
+col=0
+
+[/home/liveuser]
+row=0
 col=0
 

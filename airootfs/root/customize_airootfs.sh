@@ -55,7 +55,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 # #############################################################################
 
 # ############################# Removing packages #################################################
-#pacman -R --noconfirm gnome-terminal
+# pacman -R --noconfirm PKG_NAME
 # #################################################################################################
 
 # ############ Installing custom packages to rootfs ###############
@@ -80,10 +80,6 @@ rm -dr /etc/skel/.magpie-packages
 # ### Tap to click support for gnome settings ####
 rm -v /usr/share/X11/xorg.conf.d/70-synaptics.conf
 # ################################################
-
-# ## Unmuting speakers ##
-amixer sset Master unmute
-# #######################
 
 # ### Fixing Permisssion ## 
 chmod 755 /

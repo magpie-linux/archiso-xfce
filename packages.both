@@ -84,7 +84,7 @@ zd1211-firmware
 
 ## Base Development
 
-base-devel
+#base-devel
 
 ## Xorg
 
@@ -110,23 +110,37 @@ xfce4-goodies
 xdg-user-dirs
 lightdm
 lightdm-gtk-greeter
+gvfs
+gvfs-afc
+gvfs-goa
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
 
 ## Multimedia
 
 alsa-utils
-#gstreamer
-#phonon-qt5-gstreamer
-#gst-libav
-#gst-plugins-bad
-#gst-plugins-base
-#gst-plugins-good
-#gst-plugins-ugly
+gstreamer
+phonon-qt5-gstreamer
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+pulseaudio
+pulseaudio-alsa
+pulseaudio-bluetooth
+pulseaudio-equalizer
+pavucontrol
 
 ## Internet
 
 firefox
 flashplugin
 networkmanager
+network-manager-applet
 
 ## Virtualbox Tools
 
@@ -136,17 +150,21 @@ virtualbox-guest-utils
 ## Essential Packages
 
 adobe-source-code-pro-fonts
-#libreoffice-still
-#gimp
+libreoffice-still
+gimp
+file-roller
 
 ## Themes
 
-Numix-Cursor-Maia
 arc-gtk-theme
-#osx-arc-darker
-#osx-arc-shadow
-#osx-arc-white
+osx-arc-darker
+osx-arc-shadow
+osx-arc-white
+Numix-Cursor-Maia
 papirus-icon-theme
+gtk-engines
+gtk-engine-murrine
+
 
 ## Magpie Repository
 
