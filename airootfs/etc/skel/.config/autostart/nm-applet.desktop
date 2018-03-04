@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=nm-applet
+GenericName=Startup nm-applet
+Comment=Network Manager Applet Launcher
+Exec=nm-applet
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Qt;System;
+Name[en_US]=nm-applet

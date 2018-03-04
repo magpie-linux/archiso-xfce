@@ -1,19 +1,47 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[2018-02-25-18-34-27-00]
-row=0
+[1c4487e1-d1a0-4aa4-a0f7-fad5d6cd91bb]
+row=4
 col=0
 
-[Trash]
-row=1
+[01D3393947AA7970]
+row=7
 col=0
 
-[/]
+[01D34386141B2BC0]
 row=2
 col=0
 
-[/home/rizwan]
+[01D3AFD75E00DA60]
+row=5
+col=0
+
+[a337abad-b5d0-4d24-beea-ddf2645e25b1]
+row=0
+col=0
+
+[3af32388-ad53-4bb6-8e5a-5a26ba07001c]
 row=3
 col=0
+
+[9E18539E1853746D]
+row=6
+col=0
+
+[01D3393BDF167140]
+row=1
+col=0
+
+[Trash]
+row=0
+col=1
+
+[/]
+row=1
+col=1
+
+[/home/liveuser]
+row=2
+col=1
 
