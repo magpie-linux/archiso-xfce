@@ -2,5 +2,5 @@ NAME="MagpieOS"
 ID=MagpieOS
 ID_LIKE="arch"
 VERSION_ID=v2.1
-PRETTY_NAME="MagpieOS"
+PRETTY_NAME="MagpieOS XFCE"
 ANSI_COLOR="0;36"
