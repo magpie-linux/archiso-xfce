@@ -11,6 +11,7 @@ out_dir=out
 gpg_key=
 iso_publisher="MagpieOS <http://MagpieOS.NET>"
 iso_application="MagpieOS 2.1 (Nova)"
+distro_name="MagpieOS"
 
 arch=$(uname -m)
 verbose=""
@@ -56,7 +57,17 @@ make_pacman_conf() {
 # Base installation, plus needed packages (airootfs)
 make_basefs() {
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" init
-    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -p "haveged intel-ucode memtest86+ mkinitcpio-nfs-utils nbd zsh" install
+    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -p "haveged intel-ucode memtest86+ mkinitcpio-nfs-utils nbd zsh" install	 	
+	# Remove base kernel from airootfs
+	arch-chroot "${work_dir}/${arch}/airootfs" pacman -R linux --noconfirm
+	# Adding magpie pacman conf on airootfs
+	cp -vf pacman.conf "${work_dir}/${arch}/airootfs/etc/"
+	# Magpie kernel installation on airootfs
+	arch-chroot "${work_dir}/${arch}/airootfs" pacman -S linux-magpie --noconfirm
+	arch-chroot "${work_dir}/${arch}/airootfs" pacman -S linux-magpie-headers --noconfirm
+	arch-chroot "${work_dir}/${arch}/airootfs" pacman -S linux-magpie-docs --noconfirm
+	# Cleaning pacman repository cache of airootfs
+	#arch-chroot "${work_dir}/${arch}/airootfs" pacman -Sc --noconfirm
 }
 
 # Additional packages (airootfs)
@@ -129,7 +140,8 @@ make_syslinux() {
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/memdisk ${work_dir}/iso/${install_dir}/boot/syslinux
     mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux/hdt
     gzip -c -9 ${work_dir}/${arch}/airootfs/usr/share/hwdata/pci.ids > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/pciids.gz
-    gzip -c -9 ${work_dir}/${arch}/airootfs/usr/lib/modules/*-ARCH/modules.alias > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/modalias.gz
+#   gzip -c -9 ${work_dir}/${arch}/airootfs/usr/lib/modules/*-ARCH/modules.alias > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/modalias.gz
+    gzip -c -9 ${work_dir}/${arch}/airootfs/usr/lib/modules/*-${distro_name}/modules.alias > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/modalias.gz
 }
 
 # Prepare /isolinux

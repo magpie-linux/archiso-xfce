@@ -34,8 +34,8 @@ ipw2200-fw
 irssi
 lftp
 libunrar
-linux
-linux-headers
+linux-magpie
+linux-magpie-headers
 linux-firmware
 lolcat
 lvm2
