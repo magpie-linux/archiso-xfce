@@ -2,15 +2,15 @@
 
 set -e -u
 
-iso_name="MagpieOS-2.1-Nova"
-iso_label="MagpieOS_2.1_Nova"
+iso_name="MagpieOS-2.2-Maya"
+iso_label="MagpieOS_2.2_Maya"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=work
 out_dir=out
 gpg_key=
 iso_publisher="MagpieOS <http://MagpieOS.NET>"
-iso_application="MagpieOS 2.1 (Nova)"
+iso_application="MagpieOS 2.2 (Maya)"
 distro_name="MagpieOS"
 
 arch=$(uname -m)
