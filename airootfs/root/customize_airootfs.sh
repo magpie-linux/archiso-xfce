@@ -16,7 +16,9 @@ mv -v /etc/skel/.magpie-settings/pacman.conf /etc/pacman.conf
 # ###########################################################
 
 # ############### Importing pacman keys ############
-pacman-key --init && pacman-key --populate archlinux
+pacman-key --init 
+pacman-key --populate archlinux
+pacman-key --refresh-keys
 # ##################################################
 
 # ################################################## Creating liveuser #####################################################

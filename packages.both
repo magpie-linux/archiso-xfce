@@ -2,6 +2,7 @@
 
 arch-install-scripts
 archlinux-appstream-data
+archlinux-keyring
 b43-fwcutter
 btrfs-progs
 clonezilla
@@ -24,6 +25,8 @@ f2fs-tools
 fsarchiver
 gnu-netcat
 gpm
+gpgme
+gnupg
 gptfdisk
 grml-zsh-config
 grub
