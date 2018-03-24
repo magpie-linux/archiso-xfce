@@ -10,17 +10,6 @@ cp -aT /etc/skel/ /root/
 chmod 700 /root
 # ##############################################
 
-# ######### Adding custom repositor to pacman.conf ##########
-rm -v /etc/pacman.conf
-mv -v /etc/skel/.magpie-settings/pacman.conf /etc/pacman.conf
-# ###########################################################
-
-# ############### Importing pacman keys ############
-pacman-key --init 
-pacman-key --populate archlinux
-pacman-key --refresh-keys
-# ##################################################
-
 # ################################################## Creating liveuser #####################################################
 useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/bash liveuser
 cp -avT /etc/skel/ /home/liveuser/
@@ -34,6 +23,12 @@ mv -v /etc/skel/.magpie-settings/sudoers-backup /etc/sudoers
 chown -c root:root /etc/sudoers
 chmod -c 0440 /etc/sudoers
 # ##########################################################
+
+# ############### Importing pacman keys ############
+pacman-key --init 
+pacman-key --populate archlinux
+pacman-key --refresh-keys
+# ##################################################
 
 # ##################### OS Information ########################
 rm -v /etc/lsb-release
@@ -61,8 +56,13 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 # #################################################################################################
 
 # ############ Installing custom packages to rootfs ###############
-cd /etc/skel/.magpie-packages && pacman -U --noconfirm *.pkg.tar.xz
+pacman -U --noconfirm /etc/skel/.magpie-packages/*.pkg.tar.xz
 # #################################################################
+
+# ### Changing pacman.conf for magpie-mirrrorlist support ##
+rm -v /etc/pacman.conf
+cp -v /etc/skel/.magpie-settings/pacman.conf /etc/
+# ##########################################################
 
 # ############################ MagpieOS Install Desktop File #####################################
 cp -v /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
@@ -87,8 +87,8 @@ rm -v /usr/share/X11/xorg.conf.d/70-synaptics.conf
 chmod 755 /
 # #########################
 
-# ###############################################################################
-systemctl enable pacman-init.service choose-mirror.service NetworkManager lightdm
+# ########################################################################################
+systemctl enable pacman-init.service choose-mirror.service NetworkManager lightdm zramswap
 systemctl set-default graphical.target
-# ###############################################################################
+# ########################################################################################
 

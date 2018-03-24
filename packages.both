@@ -154,8 +154,10 @@ virtualbox-guest-utils
 
 adobe-source-code-pro-fonts
 libreoffice-fresh
-gimp
 file-roller
+filezilla
+gimp
+gparted
 
 ## Themes
 
@@ -172,11 +174,13 @@ gtk-engine-murrine
 ## Magpie Repository
 
 aic94xx-firmware
+ckbcomp
 wd719x-firmware
 neofetch-magpie
 grub-themes-magpie
 magpie-cursor
 magpie-getsource
+magpie-mirrorlist
 magpieos-wallpaper
 magpieos-startup
 package-query
@@ -185,8 +189,46 @@ yaourt
 
 ## Extra Packages
 
-filezilla
-gparted
 yaml-cpp
 polkit-qt5
 yajl
+kconfig
+kcoreaddons
+qt5-svg
+kauth
+kcodecs
+kguiaddons
+qt5-script
+ki18n
+kwidgetsaddons
+kconfigwidgets
+kitemviews
+karchive
+kiconthemes
+kjobwidgets
+kdbusaddons
+kwindowsystem
+kcrash
+kglobalaccel
+kcompletion
+kservice
+sonnet
+qt5-multimedia
+qt5-speech
+ktextwidgets
+attica
+kxmlgui
+kbookmarks
+libdbusmenu-qt5
+knotifications
+kwallet
+kio
+qt5-location
+qt5-sensors
+qt5-webchannel
+qt5-webkit
+kpmcore
+libdbusmenu-glib
+libdbusmenu-gtk3
+libindicator-gtk3
+libappindicator-gtk3
