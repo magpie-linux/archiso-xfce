@@ -2,14 +2,14 @@
 4.10.3+=true
 
 [Trash]
-row=2
-col=0
-
-[/]
 row=0
 col=0
 
-[/home/rizwan]
+[/]
 row=1
+col=0
+
+[/home/rizwan]
+row=2
 col=0
 

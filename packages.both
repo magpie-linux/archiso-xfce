@@ -56,6 +56,7 @@ openconnect
 openssh
 openvpn
 os-prober
+p7zip
 partclone
 parted
 partimage
@@ -170,7 +171,6 @@ papirus-icon-theme
 gtk-engines
 gtk-engine-murrine
 
-
 ## Magpie Repository
 
 aic94xx-firmware
@@ -186,6 +186,7 @@ magpieos-startup
 package-query
 pamac
 yaourt
+zramswap
 
 ## Extra Packages
 

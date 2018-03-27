@@ -74,6 +74,11 @@ chmod +x /home/liveuser/.config/autostart/calamares.desktop
 mv -vf /etc/skel/.magpie-settings/etc-nanorc /etc/nanorc
 # ######################################################
 
+# ################### Adding custom lightdm config ####################
+rm -v /etc/lightdm/lightdm-gtk-greeter.conf
+cp -v /etc/skel/.magpie-settings/lightdm-gtk-greeter.conf /etc/lightdm/
+# #####################################################################
+
 # ###############################
 rm -dr /etc/skel/.magpie-settings 
 rm -dr /etc/skel/.magpie-packages

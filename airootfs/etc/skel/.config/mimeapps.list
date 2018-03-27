@@ -1,2 +1,7 @@
 [Added Associations]
 text/plain=mousepad.desktop;
+application/gzip=org.gnome.FileRoller.desktop;
+application/x-compressed-tar=org.gnome.FileRoller.desktop;
+application/x-alpm-package=pamac-installer.desktop;
+application/x-shellscript=mousepad.desktop;
+text/x-matlab=mousepad.desktop;

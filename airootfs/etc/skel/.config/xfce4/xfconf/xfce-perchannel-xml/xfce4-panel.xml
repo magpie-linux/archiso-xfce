@@ -31,12 +31,15 @@
     <property name="plugin-4" type="string" value="pager"/>
     <property name="plugin-5" type="string" value="clock">
       <property name="digital-format" type="string" value="%I:%M %p"/>
+      <property name="mode" type="uint" value="2"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="your system is up-to-date"/>
+        <value type="string" value="pamac-tray"/>
         <value type="string" value="clipman"/>
+        <value type="string" value="thunar"/>
       </property>
     </property>
     <property name="plugin-7" type="string" value="whiskermenu"/>
