@@ -79,6 +79,16 @@ rm -v /etc/lightdm/lightdm-gtk-greeter.conf
 cp -v /etc/skel/.magpie-settings/lightdm-gtk-greeter.conf /etc/lightdm/
 # #####################################################################
 
+# # Fixing xfce cursor theme reset problem on reboot #
+rm -v /etc/environment
+cp -v /etc/skel/.magpie-settings/etc-environment /etc/
+# ####################################################
+
+# ### Copying release info of MagpieOS to livecd ####
+rm -v /etc/arch-release
+cp -v /etc/skel/.magpie-settings/magpie-release /etc/
+# ###################################################
+
 # ###############################
 rm -dr /etc/skel/.magpie-settings 
 rm -dr /etc/skel/.magpie-packages
