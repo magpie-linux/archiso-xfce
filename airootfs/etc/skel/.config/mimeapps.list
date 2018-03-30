@@ -5,3 +5,4 @@ application/x-compressed-tar=org.gnome.FileRoller.desktop;
 application/x-alpm-package=pamac-installer.desktop;
 application/x-shellscript=mousepad.desktop;
 text/x-matlab=mousepad.desktop;
+video/mp4=org.xfce.Parole.desktop;
