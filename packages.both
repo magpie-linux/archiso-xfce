@@ -16,6 +16,7 @@ dnsmasq
 dnsutils
 dmidecode
 dosfstools
+efibootmgr
 elinks
 exfat-utils
 e2fsprogs
