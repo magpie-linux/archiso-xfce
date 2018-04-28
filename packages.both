@@ -158,6 +158,7 @@ virtualbox-guest-utils
 ## Essential Packages
 
 adobe-source-code-pro-fonts
+codeblocks
 libreoffice-fresh
 file-roller
 filezilla
