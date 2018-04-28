@@ -187,6 +187,8 @@ magpie-getsource
 magpie-mirrorlist
 magpieos-wallpaper
 magpieos-startup
+mkinitcpio-numlock
+mkinitcpio-openswap
 package-query
 pamac
 yaourt
