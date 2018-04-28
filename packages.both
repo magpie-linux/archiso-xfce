@@ -48,6 +48,7 @@ lsscsi
 lsb-release
 mtools
 ndisc6
+neofetch
 nfs-utils
 nilfs-utils
 nmap
@@ -181,7 +182,6 @@ gtk-engine-murrine
 aic94xx-firmware
 ckbcomp
 wd719x-firmware
-neofetch-magpie
 grub-themes-magpie
 magpie-cursor
 magpie-getsource
