@@ -221,7 +221,7 @@ make_prepare() {
 # Build ISO
 make_iso() {
     mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
-    chmod 777 "${out_dir}" "${out_dir}/*"
+    chmod 777 "${out_dir}" "${out_dir}"/*
 }
 
 if [[ ${EUID} -ne 0 ]]; then

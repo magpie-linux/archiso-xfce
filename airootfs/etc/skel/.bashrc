@@ -156,6 +156,5 @@ fi
 
 # added by Miniconda2 installer
 export PATH="/home/hulk/miniconda2/bin:$PATH"
-xhost +SI:localuser:root
 clear
 cat /etc/issue | lolcat --truecolor

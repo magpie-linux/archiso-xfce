@@ -25,7 +25,7 @@ chmod -c 0440 /etc/sudoers
 # ##########################################################
 
 # ############### Importing pacman keys ############
-pacman-key --init 
+pacman-key --init
 pacman-key --populate archlinux
 pacman-key --refresh-keys
 # ##################################################
@@ -52,7 +52,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 # #############################################################################
 
 # ############################# Removing packages #################################################
-# pacman -R --noconfirm PKG_NAME
+# pacman -R --noconfirm NAME
 # #################################################################################################
 
 # ############ Installing custom packages to rootfs ###############
@@ -70,7 +70,7 @@ chown liveuser:wheel /home/liveuser/.config/autostart/calamares.desktop
 chmod +x /home/liveuser/.config/autostart/calamares.desktop
 # ################################################################################################
 
-# ########## Adding custom /etc/nanorc for Nano ######## 
+# ########## Adding custom /etc/nanorc for Nano ########
 mv -vf /etc/skel/.magpie-settings/etc-nanorc /etc/nanorc
 # ######################################################
 
@@ -90,7 +90,7 @@ cp -v /etc/skel/.magpie-settings/magpie-release /etc/
 # ###################################################
 
 # ###############################
-rm -dr /etc/skel/.magpie-settings 
+rm -dr /etc/skel/.magpie-settings
 rm -dr /etc/skel/.magpie-packages
 # ###############################
 
@@ -98,7 +98,7 @@ rm -dr /etc/skel/.magpie-packages
 rm -v /usr/share/X11/xorg.conf.d/70-synaptics.conf
 # ################################################
 
-# ### Fixing Permisssion ## 
+# ### Fixing Permisssion ##
 chmod 755 /
 # #########################
 
@@ -106,4 +106,3 @@ chmod 755 /
 systemctl enable pacman-init.service choose-mirror.service NetworkManager lightdm zramswap
 systemctl set-default graphical.target
 # ########################################################################################
-
