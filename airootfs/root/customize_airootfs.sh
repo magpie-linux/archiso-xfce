@@ -79,6 +79,16 @@ rm /etc/lightdm/lightdm-gtk-greeter.conf
 cp /etc/skel/.magpie-settings/lightdm-gtk-greeter.conf /etc/lightdm/
 # #####################################################################
 
+# ######## Adding custom mkinitcpio config ########
+rm /etc/mkinitcpio.conf
+cp /etc/skel/.magpie-settings/mkinitcpio.conf /etc/
+# #################################################
+
+# ######## Adding custom ntp config ########
+rm /etc/ntp.conf
+cp /etc/skel/.magpie-settings/ntp.conf /etc/
+# ##########################################
+
 # # Fixing xfce cursor theme reset problem on reboot #
 rm /etc/environment
 cp /etc/skel/.magpie-settings/etc-environment /etc/
@@ -102,7 +112,7 @@ rm /usr/share/X11/xorg.conf.d/70-synaptics.conf
 chmod 755 /
 # #########################
 
-# ########################################################################################
-systemctl enable pacman-init.service choose-mirror.service NetworkManager lightdm zramswap
+# #############################################################################################
+systemctl enable pacman-init.service choose-mirror.service NetworkManager lightdm zramswap ntpd
 systemctl set-default graphical.target
-# ########################################################################################
+# #############################################################################################
