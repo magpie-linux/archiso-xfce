@@ -167,14 +167,15 @@ gparted
 
 ## Themes
 
+adapta-gtk-theme
 arc-gtk-theme
 osx-arc-darker
 osx-arc-shadow
 osx-arc-white
 Numix-Cursor-Maia
-papirus-icon-theme
 gtk-engines
 gtk-engine-murrine
+plank
 
 ## Magpie Repository
 
@@ -189,6 +190,9 @@ magpieos-wallpaper
 magpieos-startup
 mkinitcpio-numlock
 mkinitcpio-openswap
+numix-icon-theme
+numix-circle-icon-theme
+numix-circle-arc-icons
 openbangla-keyboard
 package-query
 pamac

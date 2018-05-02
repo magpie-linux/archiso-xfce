@@ -37,6 +37,9 @@
   <property name="desktop-icons" type="empty">
     <property name="file-icons" type="empty">
       <property name="show-removable" type="bool" value="false"/>
+      <property name="show-trash" type="bool" value="false"/>
+      <property name="show-filesystem" type="bool" value="false"/>
+      <property name="show-home" type="bool" value="false"/>
     </property>
     <property name="icon-size" type="uint" value="48"/>
     <property name="use-custom-font-size" type="bool" value="true"/>
