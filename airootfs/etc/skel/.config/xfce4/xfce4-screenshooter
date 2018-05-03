@@ -1,8 +1,8 @@
-delay=1
+delay=0
 region=1
 action=1
 show_mouse=0
-screenshot_dir=file:/home/rizwan/Pictures
+screenshot_dir=file:/run/media/liveuser/Work
 app=ristretto
 last_user=
 
