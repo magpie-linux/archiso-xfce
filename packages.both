@@ -182,7 +182,7 @@ plank
 
 aic94xx-firmware
 ckbcomp
-wd719x-firmware
+fetchmirrors
 grub-themes-magpie
 magpie-cursor
 magpie-getsource
@@ -197,6 +197,7 @@ numix-circle-arc-icons
 openbangla-keyboard
 package-query
 pamac
+wd719x-firmware
 yaourt
 zramswap
 
