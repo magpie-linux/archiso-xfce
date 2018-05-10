@@ -1,10 +1,1 @@
-Name = MagpieOS 
-Version = 2.2 
-Architecture = x86_64
-Based disro = Arch Linux
-Codename = Maya
-Desktop = XFCE
-Total ISO Release = 4
-Developer = Rizwan Hasan <rizwan.hasan486@gmail.com>
-Country = Bangladesh
-Website = http://magpieos.net
+MagpieOS release 2.2 (Maya)

@@ -94,10 +94,11 @@ rm /etc/environment
 cp /etc/skel/.magpie-settings/etc-environment /etc/
 # ####################################################
 
-# ### Copying release info of MagpieOS to livecd ####
+# ######## Copying release info of MagpieOS to livecd ########
 rm /etc/arch-release
 cp /etc/skel/.magpie-settings/magpie-release /etc/
-# ###################################################
+cp /etc/skel/.magpie-settings/magpie-release /etc/arch-release
+# ############################################################
 
 # ###############################
 rm -dr /etc/skel/.magpie-settings
