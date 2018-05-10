@@ -100,6 +100,11 @@ cp /etc/skel/.magpie-settings/magpie-release /etc/
 cp /etc/skel/.magpie-settings/magpie-release /etc/arch-release
 # ############################################################
 
+# ##
+rm /root/.bashrc
+mv /etc/skel/.magpie-settings/bashrc_root /root/
+# ##############################################
+
 # ###############################
 rm -dr /etc/skel/.magpie-settings
 rm -dr /etc/skel/.magpie-packages
@@ -113,7 +118,8 @@ rm /usr/share/X11/xorg.conf.d/70-synaptics.conf
 chmod 755 /
 # #########################
 
-# #############################################################################################
-systemctl enable pacman-init.service choose-mirror.service NetworkManager lightdm zramswap ntpd
+# ###############################################################################
+systemctl enable pacman-init.service choose-mirror.service NetworkManager lightdm
+systemctl enable zramswap ntpd
 systemctl set-default graphical.target
-# #############################################################################################
+# ###############################################################################
