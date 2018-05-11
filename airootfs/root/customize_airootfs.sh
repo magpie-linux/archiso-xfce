@@ -79,11 +79,6 @@ rm /etc/lightdm/lightdm-gtk-greeter.conf
 cp /etc/skel/.magpie-settings/lightdm-gtk-greeter.conf /etc/lightdm/
 # #####################################################################
 
-# ######## Adding custom mkinitcpio config ########
-rm /etc/mkinitcpio.conf
-cp /etc/skel/.magpie-settings/mkinitcpio.conf /etc/
-# #################################################
-
 # ######## Adding custom ntp config ########
 rm /etc/ntp.conf
 cp /etc/skel/.magpie-settings/ntp.conf /etc/
@@ -100,10 +95,13 @@ cp /etc/skel/.magpie-settings/magpie-release /etc/
 cp /etc/skel/.magpie-settings/magpie-release /etc/arch-release
 # ############################################################
 
-# ##
-rm /root/.bashrc
-mv /etc/skel/.magpie-settings/bashrc_root /root/
-# ##############################################
+# ######## Adding red lined bash theme for root ##########
+mv -f /etc/skel/.magpie-settings/bashrc_root /root/.bashrc
+# ########################################################
+
+# ######### Adding custom mkinitcpio config ##########
+mv -f /etc/skel/.magpie-settings/mkinitcpio.conf /etc/
+# ####################################################
 
 # ###############################
 rm -dr /etc/skel/.magpie-settings

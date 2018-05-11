@@ -58,15 +58,15 @@ make_pacman_conf() {
 make_basefs() {
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" init
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -p "haveged intel-ucode memtest86+ mkinitcpio-nfs-utils nbd zsh" install
-	# Remove base kernel from airootfs
-    arch-chroot "${work_dir}/${arch}/airootfs" pacman -R linux --noconfirm > /dev/null
     # Adding magpie pacman.conf on airootfs
     cp -f pacman.conf "${work_dir}/${arch}/airootfs/etc/"
     # Adding magpie pamac.conf on airootfs
     cp -f pamac.conf "${work_dir}/${arch}/airootfs/etc/"
-    # Magpie kernel installation on airootfs
+    # MagpieOS kernel installation on airootfs
+    arch-chroot "${work_dir}/${arch}/airootfs" pacman -R linux --noconfirm > /dev/null
     arch-chroot "${work_dir}/${arch}/airootfs" pacman -S linux-magpie --noconfirm
     arch-chroot "${work_dir}/${arch}/airootfs" pacman -S linux-magpie-headers --noconfirm
+    arch-chroot "${work_dir}/${arch}/airootfs" pacman -S linux-magpie-docs --noconfirm
 }
 
 # Additional packages (airootfs)

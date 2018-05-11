@@ -37,9 +37,6 @@ ipw2200-fw
 irssi
 lftp
 libunrar
-linux-magpie
-linux-magpie-headers
-linux-firmware
 lolcat
 lvm2
 linux-atm
@@ -163,6 +160,7 @@ libreoffice-fresh
 file-roller
 filezilla
 gimp
+gnome-disk-utility
 gparted
 telegram-desktop
 
