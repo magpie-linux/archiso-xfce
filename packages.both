@@ -150,7 +150,6 @@ network-manager-applet
 ## Virtualbox Tools
 
 virtualbox-host-dkms
-virtualbox-guest-utils
 
 ## Essential Packages
 
