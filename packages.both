@@ -162,6 +162,7 @@ filezilla
 gimp
 gnome-disk-utility
 gparted
+rofi
 telegram-desktop
 
 ## Themes
@@ -182,6 +183,7 @@ plank
 aic94xx-firmware
 ckbcomp
 fetchmirrors
+gksu
 grub-themes-magpie
 magpie-cursor
 magpie-getsource
@@ -196,6 +198,7 @@ numix-circle-arc-icons
 openbangla-keyboard
 package-query
 pamac
+thunar-root
 wd719x-firmware
 yaourt
 zramswap

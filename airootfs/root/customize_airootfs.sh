@@ -96,12 +96,14 @@ cp /etc/skel/.magpie-settings/magpie-release /etc/arch-release
 # ############################################################
 
 # ######## Adding red lined bash theme for root ##########
-mv -f /etc/skel/.magpie-settings/bashrc_root /root/.bashrc
+rm /root/.bashrc
+mv /etc/skel/.magpie-settings/bashrc_root /root/.bashrc
 # ########################################################
 
-# ######### Adding custom mkinitcpio config ##########
-mv -f /etc/skel/.magpie-settings/mkinitcpio.conf /etc/
-# ####################################################
+# ######## Adding custom mkinitcpio config ########
+rm /etc/mkinitcpio.conf
+mv /etc/skel/.magpie-settings/mkinitcpio.conf /etc/
+# #################################################
 
 # ###############################
 rm -dr /etc/skel/.magpie-settings

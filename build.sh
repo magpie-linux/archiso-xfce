@@ -2,8 +2,8 @@
 
 set -e -u
 
-iso_name="MagpieOS-2.2-Maya"
-iso_label="MagpieOS_2.2_Maya"
+iso_name="MagpieOS-2.2-XFCE"
+iso_label="MagpieOS_2.2_XFCE"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=build_work
