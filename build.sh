@@ -2,15 +2,15 @@
 
 set -e -u
 
-iso_name="MagpieOS-2.2-XFCE"
-iso_label="MagpieOS_2.2_XFCE"
+iso_name="MagpieOS-2.3-XFCE"
+iso_label="MagpieOS_2.3_XFCE"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=build_work
 out_dir=ISO_Image
 gpg_key=
 iso_publisher="MagpieOS <http://MagpieOS.NET>"
-iso_application="MagpieOS 2.2 (Maya)"
+iso_application="MagpieOS 2.3 (Noreen)"
 distro_name="MagpieOS"
 
 arch=$(uname -m)
