@@ -156,7 +156,6 @@ virtualbox-guest-utils
 
 adobe-source-code-pro-fonts
 codeblocks
-conky
 libreoffice-fresh
 file-roller
 filezilla
@@ -189,6 +188,7 @@ grub-themes-magpie
 magpie-cursor
 magpie-getsource
 magpie-mirrorlist
+magpie-rofi-themes
 magpieos-wallpaper
 magpieos-startup
 mkinitcpio-numlock
