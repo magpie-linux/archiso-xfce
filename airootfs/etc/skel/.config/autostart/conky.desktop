@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+GenericName=Startup conky
+Comment=Conky Service Launcher
+Exec=conky
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Qt;System;
+Name[en_US]=conky

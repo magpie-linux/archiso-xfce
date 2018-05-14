@@ -154,16 +154,31 @@ virtualbox-guest-utils
 
 ## Essential Packages
 
-adobe-source-code-pro-fonts
 codeblocks
-libreoffice-fresh
+conky
 file-roller
 filezilla
 gimp
 gnome-disk-utility
 gparted
+libreoffice-fresh
 rofi
 telegram-desktop
+
+## Fonts
+
+adobe-source-sans-pro-fonts
+cantarell-fonts
+noto-fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-liberation
+ttf-roboto
+ttf-ubuntu-font-family
+tamsyn-font
 
 ## Themes
 
@@ -177,6 +192,7 @@ Numix-Cursor-Maia
 gtk-engines
 gtk-engine-murrine
 plank
+plank-themes
 
 ## Magpie Repository
 
