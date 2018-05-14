@@ -246,6 +246,7 @@ kglobalaccel
 kcompletion
 kservice
 sonnet
+meson
 qt5-multimedia
 qt5-speech
 ktextwidgets
