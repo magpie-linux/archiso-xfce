@@ -3,11 +3,30 @@
 <action>
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
-	<unique-id>1520183950646021-1</unique-id>
+	<unique-id>1526375798018359-10</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
-	<description>Example for a custom action</description>
+	<description>Open terminal in this directory</description>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
+</action>
+<action>
+	<icon>red-folder</icon>
+	<name>Open folder as root</name>
+	<unique-id>1526376158156114-17</unique-id>
+	<command>gksu thunar %d</command>
+	<description>Open location in root thunar</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>text-editor</icon>
+	<name>Open as text</name>
+	<unique-id>1526375629977777-7</unique-id>
+	<command>subl3 %F</command>
+	<description>Open as text file</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
 </action>
 </actions>
