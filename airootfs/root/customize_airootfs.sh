@@ -74,11 +74,6 @@ chmod +x /home/liveuser/.config/autostart/calamares.desktop
 mv -f /etc/skel/.magpie-settings/etc-nanorc /etc/nanorc
 # ######################################################
 
-# ################### Adding custom lightdm config ####################
-rm /etc/lightdm/lightdm-gtk-greeter.conf
-cp /etc/skel/.magpie-settings/lightdm-gtk-greeter.conf /etc/lightdm/
-# #####################################################################
-
 # ######## Adding custom ntp config ########
 rm /etc/ntp.conf
 cp /etc/skel/.magpie-settings/ntp.conf /etc/
@@ -104,6 +99,16 @@ mv /etc/skel/.magpie-settings/bashrc_root /root/.bashrc
 rm /etc/mkinitcpio.conf
 mv /etc/skel/.magpie-settings/mkinitcpio.conf /etc/
 # #################################################
+
+# ################ Adding lightdm-gtk-greeter config ###############
+rm /etc/lightdm/lightdm-gtk-greeter.conf
+mv /etc/skel/.magpie-settings/lightdm-gtk-greeter.conf /etc/lightdm/
+# ##################################################################
+
+# # adding to autologin group #
+groupadd -r autologin
+gpasswd -a liveuser autologin
+# #############################
 
 # ###############################
 rm -dr /etc/skel/.magpie-settings

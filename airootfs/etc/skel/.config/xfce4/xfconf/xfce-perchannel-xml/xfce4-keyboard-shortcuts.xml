@@ -37,6 +37,7 @@
       <property name="Print" type="string" value="xfce4-screenshooter -f"/>
       <property name="Super_L" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Alt&gt;r" type="string" value="/usr/bin/rofi -show run -theme magpie_rofi_transparent"/>
+      <property name="F12" type="string" value="xfce4-terminal --drop-down"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

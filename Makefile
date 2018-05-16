@@ -8,5 +8,6 @@ iso:
 	@rm -rf ${work_dir} ${ISO_Image}
 	@./build.sh -v
 clean:
-	@rm -rfv ${work_dir} ${out_dir}
+	@echo "Cleaning..."
+	@rm -rf ${work_dir} ${out_dir}
 	@echo "Cleaned"
