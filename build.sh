@@ -133,13 +133,23 @@ make_syslinux() {
         sed "s|%ARCHISO_LABEL%|${iso_label}|g;
              s|%INSTALL_DIR%|${install_dir}|g" ${_cfg} > ${work_dir}/iso/${install_dir}/boot/syslinux/${_cfg##*/}
     done
-    cp ${script_path}/syslinux/splash.png ${work_dir}/iso/${install_dir}/boot/syslinux
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/*.c32 ${work_dir}/iso/${install_dir}/boot/syslinux
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/lpxelinux.0 ${work_dir}/iso/${install_dir}/boot/syslinux
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/memdisk ${work_dir}/iso/${install_dir}/boot/syslinux
+    cp ${script_path}/syslinux/*.jpg ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/*.tr ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/*.tlk ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/*.hlp ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/*.dat ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/*.fnt ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/*.disabled ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/*.mod ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/magpie.msg ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/init ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/bootlogo ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/languages ${work_dir}/iso/${install_dir}/boot/syslinux/
+    cp ${script_path}/syslinux/gfxboot.cfg ${work_dir}/iso/${install_dir}/boot/syslinux/    
+    cp -f ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/*.c32 ${work_dir}/iso/${install_dir}/boot/syslinux
+    cp -f ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/memdisk ${work_dir}/iso/${install_dir}/boot/syslinux
     mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux/hdt
     gzip -c -9 ${work_dir}/${arch}/airootfs/usr/share/hwdata/pci.ids > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/pciids.gz
-#   gzip -c -9 ${work_dir}/${arch}/airootfs/usr/lib/modules/*-ARCH/modules.alias > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/modalias.gz
     gzip -c -9 ${work_dir}/${arch}/airootfs/usr/lib/modules/*-${distro_name}/modules.alias > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/modalias.gz
 }
 
