@@ -243,6 +243,7 @@ kbookmarks
 libdbusmenu-qt5
 knotifications
 kwallet
+tk
 kio
 qt5-location
 qt5-sensors
