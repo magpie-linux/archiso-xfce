@@ -68,7 +68,6 @@ sdparm
 solid
 sg3_utils
 smartmontools
-speedtouch
 squashfs-tools
 sudo
 tcpdump
@@ -82,7 +81,6 @@ wireless_tools
 wpa_actiond
 wvdial
 xl2tpd
-zd1211-firmware
 
 ## Base Development
 
