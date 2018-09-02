@@ -1,0 +1,11 @@
+{
+    "distro name": "MagpieOS",
+    "pretty name": "MagpieOS",
+    "version": "v2.4",
+    "codename": "Eva",
+    "base": "arch",
+    "iso publisher": "MagpieOS <http://MagpieOS.NET>",
+    "iso application": "MagpieOS 2.4 (Eva)",
+    "iso name": "MagpieOS-2.4-XFCE",
+    "iso label":"MagpieOS_2.4_XFCE"
+}

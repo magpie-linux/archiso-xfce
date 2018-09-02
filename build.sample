@@ -1,17 +1,17 @@
-#!/bin/bash
+#SHELL_LOCATION
 
 set -e -u
 
-iso_name="MagpieOS-2.4-XFCE"
-iso_label="MagpieOS_2.4_XFCE"
+iso_name="@"
+iso_label="@"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=build_work
 out_dir=ISO_Image
 gpg_key=
-iso_publisher="MagpieOS <http://MagpieOS.NET>"
-iso_application="MagpieOS 2.4 (Eva)"
-distro_name="MagpieOS"
+iso_publisher="@"
+iso_application="@"
+distro_name="@"
 
 arch=$(uname -m)
 verbose=""
@@ -145,7 +145,7 @@ make_syslinux() {
     cp ${script_path}/syslinux/init ${work_dir}/iso/${install_dir}/boot/syslinux/
     cp ${script_path}/syslinux/bootlogo ${work_dir}/iso/${install_dir}/boot/syslinux/
     cp ${script_path}/syslinux/languages ${work_dir}/iso/${install_dir}/boot/syslinux/
-    cp ${script_path}/syslinux/gfxboot.cfg ${work_dir}/iso/${install_dir}/boot/syslinux/    
+    cp ${script_path}/syslinux/gfxboot.cfg ${work_dir}/iso/${install_dir}/boot/syslinux/
     cp -f ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/*.c32 ${work_dir}/iso/${install_dir}/boot/syslinux
     cp -f ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/memdisk ${work_dir}/iso/${install_dir}/boot/syslinux
     mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux/hdt
