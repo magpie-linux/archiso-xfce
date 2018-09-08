@@ -170,11 +170,9 @@ otf-fira-code
 ## Themes
 
 adapta-gtk-theme
+qogir-gtk-theme
 arc-gtk-theme
 bibata-cursor-theme
-osx-arc-darker
-osx-arc-shadow
-osx-arc-white
 Numix-Cursor-Maia
 gtk-engines
 gtk-engine-murrine
@@ -184,6 +182,7 @@ plank-themes
 ## Magpie Repository
 
 aic94xx-firmware
+zd1211-firmware
 ckbcomp
 fetchmirrors
 grub-themes-magpie
