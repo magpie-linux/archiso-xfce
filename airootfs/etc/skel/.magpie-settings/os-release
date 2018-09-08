@@ -1,6 +1,0 @@
-NAME="MagpieOS"
-ID=MagpieOS
-ID_LIKE="arch"
-VERSION_ID=v2.4
-PRETTY_NAME="MagpieOS"
-ANSI_COLOR="0;36"

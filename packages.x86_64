@@ -178,6 +178,8 @@ gtk-engines
 gtk-engine-murrine
 plank
 plank-themes
+qt5ct
+qt5-styleplugins
 
 ## Magpie Repository
 
