@@ -111,7 +111,7 @@ gpasswd -a liveuser autologin
 # #############################
 
 # ######################## Cursor theme problem fixing ###########################
-cp /etc/skel/.magpie-settings/index.theme.txt /usr/share/icons/default/index.theme
+cp /etc/skel/.magpie-settings/index.txt /usr/share/icons/default/index.theme
 # ################################################################################
 
 # ###############################
