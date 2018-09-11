@@ -162,6 +162,7 @@ gimp
 gnome-disk-utility
 gparted
 libreoffice-fresh
+xfce-terminal-onedark
 rofi
 telegram-desktop
 ttf-fira-code
@@ -174,6 +175,7 @@ qogir-gtk-theme
 arc-gtk-theme
 bibata-cursor-theme
 Numix-Cursor-Maia
+oxygen-neon-blue-cursor
 gtk-engines
 gtk-engine-murrine
 plank
@@ -187,6 +189,7 @@ aic94xx-firmware
 zd1211-firmware
 ckbcomp
 fetchmirrors
+gui-sudo
 grub-themes-magpie
 magpie-cursor
 magpie-getsource
