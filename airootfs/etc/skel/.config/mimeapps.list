@@ -3,6 +3,11 @@ text/plain=mousepad.desktop;
 application/gzip=org.gnome.FileRoller.desktop;
 application/x-compressed-tar=org.gnome.FileRoller.desktop;
 application/x-alpm-package=pamac-installer.desktop;
-application/x-shellscript=mousepad.desktop;
+application/x-shellscript=sublime_text_3.desktop;mousepad.desktop;
 text/x-matlab=mousepad.desktop;
 video/mp4=org.xfce.Parole.desktop;
+image/png=ristretto.desktop;gimp.desktop;
+application/zip=org.gnome.FileRoller.desktop;
+
+[Default Applications]
+image/png=ristretto.desktop

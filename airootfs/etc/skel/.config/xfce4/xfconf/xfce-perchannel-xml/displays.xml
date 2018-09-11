@@ -2,8 +2,8 @@
 
 <channel name="displays" version="1.0">
   <property name="Default" type="empty">
-    <property name="VGA-1" type="string" value="1. VBX ">
-      <property name="Active" type="bool" value="true"/>
+    <property name="VGA-1" type="string" value="1. VirtualBox ">
+      <property name="Active" type="bool" value="false"/>
       <property name="Resolution" type="string" value="1440x900"/>
       <property name="RefreshRate" type="double" value="59.990913"/>
       <property name="Rotation" type="int" value="0"/>

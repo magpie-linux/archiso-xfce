@@ -2,7 +2,7 @@ delay=0
 region=1
 action=1
 show_mouse=0
-screenshot_dir=file:/run/media/liveuser/Work
+screenshot_dir=file:/home/rizwan/Pictures
 app=ristretto
 last_user=
 

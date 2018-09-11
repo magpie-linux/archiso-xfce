@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="OSX-Arc-Darker"/>
-    <property name="IconThemeName" type="string" value="Numix-Circle-Arc"/>
+    <property name="ThemeName" type="string" value="Arc-Darker"/>
+    <property name="IconThemeName" type="string" value="Papirus"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -23,16 +23,16 @@
   <property name="Gtk" type="empty">
     <property name="CanChangeAccels" type="empty"/>
     <property name="ColorPalette" type="empty"/>
-    <property name="FontName" type="empty"/>
-    <property name="MonospaceFontName" type="empty"/>
+    <property name="FontName" type="string" value="Rupali 10"/>
+    <property name="MonospaceFontName" type="string" value="Monaco 10"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
-    <property name="ToolbarStyle" type="empty"/>
+    <property name="ToolbarStyle" type="string" value="both-horiz"/>
     <property name="ToolbarIconSize" type="empty"/>
     <property name="MenuImages" type="empty"/>
     <property name="ButtonImages" type="empty"/>
     <property name="MenuBarAccel" type="empty"/>
-    <property name="CursorThemeName" type="string" value="Numix-Cursor-Maia"/>
+    <property name="CursorThemeName" type="string" value="Neon-Blue"/>
     <property name="CursorThemeSize" type="int" value="16"/>
     <property name="DecorationLayout" type="empty"/>
   </property>

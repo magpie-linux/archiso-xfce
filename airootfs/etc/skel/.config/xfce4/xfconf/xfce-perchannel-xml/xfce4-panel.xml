@@ -23,12 +23,12 @@
       <property name="leave-opacity" type="uint" value="90"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-color" type="array">
-        <value type="uint" value="0"/>
-        <value type="uint" value="0"/>
-        <value type="uint" value="0"/>
+        <value type="uint" value="9766"/>
+        <value type="uint" value="10794"/>
+        <value type="uint" value="12850"/>
         <value type="uint" value="65535"/>
       </property>
-      <property name="background-alpha" type="uint" value="70"/>
+      <property name="background-alpha" type="uint" value="100"/>
       <property name="enter-opacity" type="uint" value="90"/>
     </property>
   </property>

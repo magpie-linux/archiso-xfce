@@ -171,12 +171,12 @@ otf-fira-code
 
 ## Themes
 
-adapta-gtk-theme
 qogir-gtk-theme
 arc-gtk-theme
 bibata-cursor-theme
 Numix-Cursor-Maia
 oxygen-neon-blue-cursor
+papirus-icon-theme
 gtk-engines
 gtk-engine-murrine
 plank
@@ -200,9 +200,6 @@ magpieos-wallpaper
 magpieos-startup
 mkinitcpio-numlock
 mkinitcpio-openswap
-numix-icon-theme
-numix-circle-icon-theme
-numix-circle-arc-icons
 openbangla-keyboard
 package-query
 pamac
