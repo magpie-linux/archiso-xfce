@@ -110,6 +110,7 @@ xfce4-goodies
 xdg-user-dirs
 lightdm
 lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 gvfs
 gvfs-afc
 gvfs-goa
