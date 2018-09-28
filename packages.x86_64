@@ -111,6 +111,7 @@ xdg-user-dirs
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
+light-locker
 gvfs
 gvfs-afc
 gvfs-goa
