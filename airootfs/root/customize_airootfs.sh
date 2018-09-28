@@ -114,6 +114,11 @@ gpasswd -a liveuser autologin
 cp /etc/skel/.magpie-settings/index.txt /usr/share/icons/default/index.theme
 # ################################################################################
 
+# ###### Xfce lockscreen not showing problem fix ########
+cp /etc/skel/.magpie-settings/xflock4.sh /usr/bin/xflock4
+chmod +x /usr/bin/xflock4
+# #######################################################
+
 # ###############################
 rm -dr /etc/skel/.magpie-settings
 rm -dr /etc/skel/.magpie-packages
