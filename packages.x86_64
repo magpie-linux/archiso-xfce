@@ -131,6 +131,7 @@ gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
+nomacs
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
