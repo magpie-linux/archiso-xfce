@@ -119,6 +119,10 @@ cp /etc/skel/.magpie-settings/xflock4.sh /usr/bin/xflock4
 chmod +x /usr/bin/xflock4
 # #######################################################
 
+# ############# Adding Xfce File Manager(Thunar) drive mount without password ##############
+cp -f /etc/skel/.magpie-settings/org.freedesktop.UDisks2.policy /usr/share/polkit-1/actions/
+# ##########################################################################################
+
 # ###############################
 rm -dr /etc/skel/.magpie-settings
 rm -dr /etc/skel/.magpie-packages
