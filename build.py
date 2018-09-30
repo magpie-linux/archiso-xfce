@@ -51,15 +51,12 @@ class MainWork():
 
         with open('airootfs/etc/skel/.magpie-settings/' + 'lsb-release', 'w') as file:
             file.write(self.lsb_release)
-        subprocess.call('chmod 777' + ' ' + 'airootfs/etc/skel/.magpie-settings/' + 'lsb-release', shell=True)
 
         with open('airootfs/etc/skel/.magpie-settings/' + 'os-release', 'w') as file:
             file.write(self.os_release)
-        subprocess.call('chmod 777' + ' ' + 'airootfs/etc/skel/.magpie-settings/' + 'os-release', shell=True)
 
         with open('airootfs/etc/skel/.magpie-settings/' + 'magpie-release', 'w') as file:
             file.write(self.magpie_release)
-        subprocess.call('chmod 777' + ' ' + 'airootfs/etc/skel/.magpie-settings/' + 'magpie-release', shell=True)
 
     def scriptBuilding(self):
         self.scriptData = self.scriptData.replace("#SHELL_LOCATION", "#!/bin/bash")
@@ -76,8 +73,10 @@ class MainWork():
 
         with open('build.sh', 'w') as file:
             file.write(self.scriptData)
-        subprocess.call('chmod 777 build.sh', shell=True)
         subprocess.call('chmod +x build.sh', shell=True)
+        subprocess.call('cp -f root_customizer.sh airootfs/root/customize_airootfs.sh', shell=True)
+        subprocess.call('sudo chmod +x airootfs/root/customize_airootfs.sh', shell=True)
+        subprocess.call('sudo chmod 777 airootfs/root/customize_airootfs.sh', shell=True)
 
     def runCommand(self):
         check = int(1)
@@ -91,6 +90,7 @@ class MainWork():
 
 def clean():
     subprocess.call('sudo rm -rf build.sh build_work', shell = True)
+    subprocess.call('sudo rm -rf airootfs/root/customize_airootfs.sh', shell=True)
     subprocess.call('sudo rm -rf airootfs/etc/skel/.magpie-settings/magpie-release', shell = True)
     subprocess.call('sudo rm -rf airootfs/etc/skel/.magpie-settings/lsb-release', shell = True)
     subprocess.call('sudo rm -rf airootfs/etc/skel/.magpie-settings/os-release', shell = True)
