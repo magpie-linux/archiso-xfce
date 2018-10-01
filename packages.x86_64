@@ -206,7 +206,7 @@ openbangla-keyboard
 package-query
 pamac
 wd719x-firmware
-yaourt
+yay
 zramswap
 
 ## Extra Packages
