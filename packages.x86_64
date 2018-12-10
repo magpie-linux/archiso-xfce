@@ -247,6 +247,7 @@ knotifications
 kwallet
 tk
 kio
+qt5-xmlpatterns
 qt5-location
 qt5-sensors
 qt5-webchannel
