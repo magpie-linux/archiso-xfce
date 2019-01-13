@@ -138,6 +138,6 @@ chmod 755 /
 
 # ###############################################################################
 systemctl enable pacman-init.service choose-mirror.service NetworkManager lightdm
-systemctl enable zramswap ntpd bluetooth org.cups.cupsd
+systemctl enable ntpd bluetooth org.cups.cupsd
 systemctl set-default graphical.target
 # ###############################################################################
