@@ -64,12 +64,6 @@ rm /etc/pacman.conf
 cp /etc/skel/.magpie-settings/pacman.conf /etc/
 # ##########################################################
 
-# ############################ MagpieOS Install Desktop File #####################################
-cp /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
-chown liveuser:wheel /home/liveuser/.config/autostart/calamares.desktop
-chmod +x /home/liveuser/.config/autostart/calamares.desktop
-# ################################################################################################
-
 # ########## Adding custom /etc/nanorc for Nano ########
 mv -f /etc/skel/.magpie-settings/etc-nanorc /etc/nanorc
 # ######################################################
